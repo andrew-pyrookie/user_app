@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="main">
+    <file>dollars.svg</file>
+  </qresource>
+  <qresource prefix="Buttons">
+    <file>cancel.svg</file>
+    <file>ok.svg</file>
+  </qresource>
+</RCC>
