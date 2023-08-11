@@ -8,8 +8,8 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-import sys
-import os
+
+
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
@@ -22,10 +22,14 @@ from PySide6.QtWidgets import (QApplication, QDialog, QFormLayout, QGridLayout,
     QGroupBox, QLabel, QLineEdit, QPushButton,
     QSizePolicy, QSpacerItem, QWidget)
 
-icons_dir = "/home/musiliandrew/Desktop/projects/User_App/icons"
+import sys
+import os
+
+icons_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'icons')
 sys.path.append(icons_dir)
 
-from icons import icon_rc
+from icons import icons_rc
+
 
 
 class Ui_d_Person(object):
